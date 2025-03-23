@@ -2,12 +2,13 @@
   "name": "corporate-website",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "yarn@3.6.3",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "next build",
+    "pages:deploy": "next build && wrangler pages deploy .next"
   },
   "dependencies": {
     "next": "14.1.0",

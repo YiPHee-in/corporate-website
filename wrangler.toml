@@ -1,0 +1,13 @@
+name = "corporate-website"
+compatibility_date = "2024-03-23"
+
+[build]
+command = "yarn build"
+cwd = "."
+
+[site]
+bucket = ".next/static"
+include = ["public/**/*"]
+
+[build.upload]
+format = "service-worker" 
